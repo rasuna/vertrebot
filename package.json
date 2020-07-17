@@ -1,0 +1,32 @@
+{
+  "name": "vertrebot",
+  "author": "Verbazend Tredici",
+  "version": "1.0.0",
+  "description": "Discord bot for Vertredici channel",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js}": ["prettier --write"]
+  }
+}
