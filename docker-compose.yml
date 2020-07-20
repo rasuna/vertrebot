@@ -1,0 +1,19 @@
+version: '2.4'
+
+services:
+  app:
+    build:
+      context: .
+      target: dev
+    ports:
+      - "3030:80"
+      - "9229:9229"
+    volumes:
+      - .:/app
+      - /app/node_modules
+  mongo:
+      image: mongo
+      volumes:
+        - ./mongodb/data/db
+      ports:
+        - '27017:27017'
