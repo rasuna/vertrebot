@@ -1,7 +1,7 @@
 {
   "name": "vertrebot",
   "author": "Verbazend Tredici",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Discord bot for Vertredici channel",
   "license": "MIT",
   "main": "./src/index.js",
@@ -30,7 +30,8 @@
   },
   "lint-staged": {
     "src/**/*.{js}": [
-      "prettier --write"
+      "prettier --write",
+      "eslint src/**/*.js --fix"
     ]
   }
 }
