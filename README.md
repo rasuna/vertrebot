@@ -9,6 +9,8 @@
 - [NodeJS](https://nodejs.org/en/download/)
 - [Docker](https://docs.docker.com/desktop/)
 
+Make sure you have your own bot set up, otherwise you can follow [this guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html) to setup one and add it to your server.
+
 #### Getting Started
 
 Fork this repository on Github. Clone your forked repository into your hard drive.
@@ -25,6 +27,7 @@ $ npm install
 ```
 
 Create `.env` file with the following contents.
+[Here is how you can find your token](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token).
 
 ```
 PREFIX=!
